@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+CSS Selectors</title>
+<style>
+    /*Element selector*/
+    div{
+        background-color: red;
+    }
+    /* id selector*/
+    #green{
+        background-color: aqua;
+    }
+    /* child selector*/
+    div >p {
+        background-color: bisque;
+        color:black
+    }
+    /* descendant selector */
+    div p {
+        background-color: bisque;
+        color:black
+    }
+     /* universal selector */
+    *{
+        margin:0;
+        padding:0;
+    }
+    /* pseudo selector */
+    a:visited{
+        color:black
+    }
+    a:link{
+        color:green;
+    }
+    a:active{
+        background-color:blue;
+    }
+    a:hover{
+        background-color:chartreuse
+    }
+    p:first-child{
+        background-color: blueviolet;
+
+    }
+</style>
+</head>
+<body>
+    <main class="one">
+        <p>i am first</p>
+        <p>i am second</p>
+
+    </main>
+    <div class="red">
+        this is div
+    </div>
+    <div id="green">
+        i am second div
+    </div>
+    <div>
+        <article>
+        <p> this a para inside div</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.snapchat.com">Go to Snapchat</a>
+
+</body>
+</html>
