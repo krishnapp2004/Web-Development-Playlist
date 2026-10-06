@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+CSS Sizing Units</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    /* root element */
+    html{
+        font-size:12px;
+    }
+    .box{
+        box-sizing: border-box;
+        border:2px solid black;
+        /* a pixel is 196th of an inch */
+        /* width:233px; */
+        /* vw is viewport */
+        width:80vw;
+        /* it is not possible to auto margin a inline element only block elements are centered */
+        margin:auto;
+        background-color: aquamarine;
+        height:10vh;
+
+
+    }
+    .container{
+        box-sizing: border-box;
+        border:2px solid black;
+         width:80vw;
+         margin: 23px auto;
+        background-color: aquamarine;
+        /* height:80vh; */
+        min-height:80vh;
+        font-size:12px;
+
+
+    }
+    /* em-inherits the property from the container here the fontsize also it multiplies with the size of the container value */
+    /* rem-inherits the property of the root element */
+    .container > div{
+        font-size:2em;
+        /* 50% of the parent */
+        width:50%;
+        border: 2px solid red;
+    }
+    .mycont{
+        box-sizing: border-box;
+        border:2px solid black;
+        color:rgb(0,0,0);
+        font-size: 22px;
+        /* particularly based on your device you are using it's width and height matters */
+        /* width:100vmin; */
+        width:80vw;
+        margin:23px auto;
+
+    }
+    .container > div > div{
+        width:50%;
+        border:2px solid blue;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        this is a box
+
+    </div>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sequi corporis expedita nemo natus voluptatibus et, sint, minima perspiciatis accusantium ex doloremque porro architecto mollitia rerum nisi esse non numquam ut quidem reprehenderit. Provident mollitia, nisi cumque similique ea asperiores itaque hic! Soluta et iure culpa illum corrupti facere explicabo magnam ducimus enim consequatur, fuga id?
+         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero mollitia placeat, atque facere nulla corporis assumenda eius, eveniet consequuntur temporibus sed. Quis, quam.</div>
+        </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur numquam assumenda. Vitae neque assumenda accusantium aspernatur tempora adipisci minus mollitia corrupti, pariatur delectus eligendi blanditiis libero aliquam. Eaque quam obcaecati deserunt perspiciatis atque quas veniam modi, dolores reiciendis, aliquid eos! Cum eum alias tempora perferendis quis, aspernatur amet facilis! Nemo voluptatum aspernatur error natus dolores.
+    <!-- lorem999 for viewing the adjustment -->
+</div>
+    <div class="mycont">I am another container</div>
+</body>
+</html>
